@@ -1,0 +1,50 @@
+# -----------------------------------------
+# Syntax Coloring Map For NSControlLibrary
+# -----------------------------------------
+
+NSControlLibrary	KEYWORD1
+
+# -----------------------------------------
+pushButton	KEYWORD2
+holdButton	KEYWORD2
+releaseButton	KEYWORD2
+# -----------------------------------------
+
+# Button::Y = 0x0001;
+# Button::B = 0x0002;
+# Button::A = 0x0004;
+# Button::X = 0x0008;
+# Button::L = 0x0010;
+# Button::R = 0x0020;
+# Button::ZL = 0x0040;
+# Button::ZR = 0x0080;
+# Button::MINUS = 0x0100;
+# Button::PLUS = 0x0200;
+# Button::LCLICK = 0x0400;
+# Button::RCLICK = 0x0800;
+# Button::HOME = 0x1000;
+# Button::CAPTURE = 0x2000;
+
+# -----------------------------------------
+pushHat		KEYWORD2
+holdHat		KEYWORD2
+releaseHat	KEYWORD2
+# -----------------------------------------
+
+# Hat::UP = 0x00;
+# Hat::UP_RIGHT = 0x01;
+# Hat::RIGHT = 0x02;
+# Hat::DOWN_RIGHT = 0x03;
+# Hat::DOWN = 0x04;
+# Hat::DOWN_LEFT = 0x05;
+# Hat::LEFT = 0x06;
+# Hat::UP_LEFT = 0x07;
+# NEUTRAL = 0x08;
+
+# -----------------------------------------
+leftStickTilt		KEYWORD2
+rightStickTilt		KEYWORD2
+leftStickNeutral	KEYWORD2
+rightStickNeutral	KEYWORD2
+# -----------------------------------------
+
