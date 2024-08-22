@@ -1,6 +1,6 @@
 # NSControlLibrary
 
-Arduino を Nintendo Switch にコントローラーとして認識させ操作コード記述の簡素化を可能にするライブラリです。
+Arduino を Nintendo Switch にコントローラーとして認識させ操作コード記述の簡素化を目的としたライブラリです。
 
 # このライブラリについて
 
