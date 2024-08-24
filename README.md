@@ -1,4 +1,5 @@
 # NSControlLibrary
+- v1.1.1
 
 Arduino を Nintendo Switch にコントローラーとして認識させ操作コード記述の簡素化を目的としたライブラリです。
 
@@ -180,5 +181,10 @@ NSControlLibrary フォルダ下層の SwitchControlLibrary が動作します�
     rightStickTilt(180, 100, 1000); // 右スティックを下に100%傾け、次のコマンドまで1秒間待つ
     rightStickNeutral(2000);        // 右スティックをニュートラルに戻し、次のコマンドまで2秒間待つ
     ```
-- license
-  MIT
+
+## 修正履歴
+  - 1.1.1 アナログスティックの定義重複の修正
+  - 1.1.0 アナログスティックのコマンド記述方法の変更
+    
+## license
+  - MIT
