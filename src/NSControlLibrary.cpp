@@ -3,7 +3,8 @@
 #include <math.h>
 
 // 度からラジアンに変換するヘルパー関数
-#define DEG_TO_RAD(angleDegrees) ((angleDegrees) * M_PI / 180.0)
+#define MY_DEG_TO_RAD(angleDegrees) ((angleDegrees) * 0.017453292519943295769236907684886)
+
 uint8_t scaleValue(int8_t value, int8_t fromLow, int8_t fromHigh, uint8_t toLow, uint8_t toHigh) {
     return (value - fromLow) * (toHigh - toLow) / (fromHigh - fromLow) + toLow;
 }
@@ -98,13 +99,11 @@ void releaseHat(unsigned long delay_time) {
 
  //  左スティック
 void leftStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time) {
-    // 方向と強さを元にX, Y軸の値を計算
     double adjusted_angle_deg = angle_deg - 90; // 0°が北になるように調整
-    double angle_rad = DEG_TO_RAD(adjusted_angle_deg);
+    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg); // ここを変更
     int8_t lx = (int8_t)(cos(angle_rad) * strength);
     int8_t ly = (int8_t)(sin(angle_rad) * strength);
     
-    // 0〜255にスケーリング
     uint8_t scaledLX = map(lx, -100, 100, 0, 255);
     uint8_t scaledLY = map(ly, -100, 100, 0, 255);
 
@@ -115,9 +114,8 @@ void leftStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time
 
 //  右スティック
 void rightStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time) {
-
     double adjusted_angle_deg = angle_deg - 90;
-    double angle_rad = DEG_TO_RAD(adjusted_angle_deg);
+    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg); // ここを変更
     int8_t rx = (int8_t)(cos(angle_rad) * strength);
     int8_t ry = (int8_t)(sin(angle_rad) * strength);
 
