@@ -101,7 +101,7 @@ void releaseHat(unsigned long delay_time) {
  //  左スティック
 void leftStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time) {
     double adjusted_angle_deg = angle_deg - 90; // 0°が北になるように調整
-    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg); // ここを変更
+    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg);
     int8_t lx = (int8_t)(cos(angle_rad) * strength);
     int8_t ly = (int8_t)(sin(angle_rad) * strength);
     
@@ -116,7 +116,7 @@ void leftStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time
 //  右スティック
 void rightStickTilt(int16_t angle_deg, uint8_t strength, unsigned long delay_time) {
     double adjusted_angle_deg = angle_deg - 90;
-    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg); // ここを変更
+    double angle_rad = MY_DEG_TO_RAD(adjusted_angle_deg);
     int8_t rx = (int8_t)(cos(angle_rad) * strength);
     int8_t ry = (int8_t)(sin(angle_rad) * strength);
 
