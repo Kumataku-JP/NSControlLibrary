@@ -5,7 +5,7 @@ Arduino を Nintendo Switch にコントローラーとして認識させ操作�
 
 # このライブラリについて
 
-このライブラリは、celclow 氏の"SwitchControlLibrary"(https://github.com/celclow/SwitchControlLibrary)を元にArduinoSTLを別途必要としないよう改良を加え、
+このライブラリは、celclow 氏の[SwitchControlLibrary](https://github.com/celclow/SwitchControlLibrary)を元にArduinoSTLを別途必要としないよう改良を加え、
 NSControlLibrary にて、ボタンを、押して離す、押しっぱなし、複数ボタンを同時押し、順番に押しっぱなし、順番に離す、連打など自動化するボタン操作、アナログスティックの傾きの方向と強さを数値的にわかりやすくし、必要なコード行数を簡素にし自動化したい操作手順を認識しやくすることを目指したライブラリです。
 
 # 動作環境
