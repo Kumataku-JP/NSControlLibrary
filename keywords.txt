@@ -42,9 +42,9 @@ releaseHat	KEYWORD2
 # NEUTRAL = 0x08;
 
 # -----------------------------------------
-leftStickTilt		KEYWORD2
-rightStickTilt		KEYWORD2
-leftStickNeutral	KEYWORD2
-rightStickNeutral	KEYWORD2
+stickTilt	KEYWORD2
+stickNeutral	KEYWORD2
 # -----------------------------------------
 
+# Stick::LEFT = 0;
+# Stick::RIGHT = 1;
